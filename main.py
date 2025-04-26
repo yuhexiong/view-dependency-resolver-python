@@ -1,9 +1,11 @@
 import yaml
+
 from extractor import fetch_dependencies
 from resolver import ViewDependencyResolver
 
+
 def main():
-    # 取得 immediate 依賴 map
+    # 取得 view 依賴
     dependency_map = fetch_dependencies()
 
     # 展開遞迴依賴
@@ -13,9 +15,10 @@ def main():
         for view in dependency_map
     }
 
-    # 輸出 flatten 遞迴依賴結構
+    # 輸出 flatten 遞迴依賴結構，並儲存為 yaml。
     with open("views.yaml", "w") as f:
-        yaml.dump({"views": resolved_dependency_map}, f, sort_keys=True, allow_unicode=True)
+        yaml.dump({"views": resolved_dependency_map},
+                  f, sort_keys=True, allow_unicode=True)
 
     print("✅ Flatten view dependency map exported to 'views.yaml'")
 

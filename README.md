@@ -1,12 +1,34 @@
 # View Dependency Resolver
 
-自動解析資料庫中 view 的依賴關係並展平成 YAML。
+Automatically parse the dependencies of views in the database (Doris) and flatten them into a YAML file.
 
+## Overview
+
+- Language: Python v3.12
+
+## ENV
+
+copy .env.example and rename as .env
+
+```
+DB_HOST=localhost
+DB_PORT=9030
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=database
+```
+
+
+## Run
+
+### Install Modules
 
 ```
 pip install -r requirements.txt
 ```
 
+
+### Run
 
 ```
 python main.py

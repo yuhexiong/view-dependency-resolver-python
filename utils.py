@@ -1,7 +1,13 @@
-from dotenv import load_dotenv
 import os
 
+from dotenv import load_dotenv
+
+
 def load_db_config():
+    """
+    連線到資料庫。
+    """
+
     load_dotenv()
     return {
         "host": os.getenv("DB_HOST"),
