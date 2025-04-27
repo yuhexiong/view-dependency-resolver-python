@@ -1,9 +1,6 @@
 # View Dependency Resolver
 
-**(also provided Traditional Chinese version document [README-CH.md](README-CH.md).)**
-
-
-Automatically parse the dependencies of views in the database (Doris) and flatten them into a YAML file.
+將資料庫（Doris）中 view 的依賴關係自動解析，並將其展平成一個 YAML 檔案。
 
 ## Overview
 
@@ -11,7 +8,7 @@ Automatically parse the dependencies of views in the database (Doris) and flatte
 
 ## ENV
 
-copy `.env.example` and rename as `.env`
+複製 `.env.example` 並更新名稱為 `.env`
 
 ```
 DB_HOST=localhost
