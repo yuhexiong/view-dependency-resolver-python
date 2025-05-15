@@ -2,7 +2,6 @@
 
 **(also provided Traditional Chinese version document [README-CH.md](README-CH.md).)**
 
-<!-- testing for commit -->
 Automatically parse the dependencies of views in the database (Doris) and flatten them into a YAML file.
 
 ## Overview
